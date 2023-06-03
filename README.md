@@ -1,6 +1,6 @@
-# recipebook-api
+# Recipe Book API
 
-### this is the backend/api used to service my Recipe Book website: https://bestrecipeever.netlify.app/
+### This is the backend/api used to service my Recipe Book website: https://bestrecipeever.netlify.app/
 
 ### The frontend and backend of this website were built with the MERN stack.
 ### This repo contains the M, E, and N of the MERN stack (MongoDB, Expressjs, Reactjs, Nodejs).
