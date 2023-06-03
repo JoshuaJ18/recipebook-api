@@ -15,17 +15,11 @@ app.use(cors());
 app.use("/auth", userRouter);
 app.use("/recipes", recipeRouter);
 
-__dirname = path.resolve();
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, "client/recipe-app/build")));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client/recipe-app", "build", "index.html"));
-  });
-} else {
-
-}
 // contains password so change later using env variables
 mongoose.connect(process.env.MONGO_URL)
+
+app.get('/', (req, res) => {
+  res.send('API is running.');
+});
 // this basically tells the api to run
 app.listen(process.env.PORT || 3001, () => console.log("Server Started"));
