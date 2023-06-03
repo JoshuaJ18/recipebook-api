@@ -4,7 +4,6 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import { userRouter } from "./src/routes/users.js";
 import { recipeRouter } from "./src/routes/recipes.js";
-import { path } from "path";
 
 config();
 const app = express();
